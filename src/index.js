@@ -1,3 +1,5 @@
+import React from 'react';
+
 const getState = jest.fn();
 const dispatch = jest.fn();
 
