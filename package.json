@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "babel": "babel src/ --out-dir lib",
-    "publish": "npm run babel && npm publish",
+    "release": "npm run babel && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
