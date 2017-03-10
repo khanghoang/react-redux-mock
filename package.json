@@ -4,15 +4,21 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "babel": "babel src/ --out-dir lib",
-    "release": "npm run babel && npm publish",
+    "webpack": "webpack",
+    "release": "npm run webpack && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
     "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0"
+    "babel-preset-stage-0": "^6.22.0",
+    "webpack": "^2.2.1"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2"
   }
 }
