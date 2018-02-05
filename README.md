@@ -30,7 +30,7 @@ const ConnectedText = compose(
 export default ConnectedText;
 ```
 
-This is how you can the above component with `react-redux-mock`?
+This is how you can test the component above with `react-redux-mock`?
 ```
 jest.mock('react-redux', () => require('react-redux-mock'));
 import { __setState } from 'react-redux';
@@ -47,7 +47,7 @@ describe('Text component', () => {
 });
 ```
 
-Notice that you can hrender the `connected` component itself without
+Notice that you can render the `connected` component itself without
 defining what is the store and the `Provider` component.
 
 ### Have question?
